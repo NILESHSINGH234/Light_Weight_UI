@@ -51,5 +51,5 @@ Be sure to have your pages set up with the latest design and development standar
 - Toast
 - Utilities
 
-> The documentation can be found at [momentui.com](https://momentui.netlify.app/get-started/quick-start.html) 
+> The documentation can be found at [Light Weight UI](https://vercel.com/nileshsingh234/light-weight-ui/4BR3fzFeQy8vXzgdwfxtyXnDZQaY) 
 
