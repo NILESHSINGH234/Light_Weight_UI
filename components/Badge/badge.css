@@ -1,0 +1,77 @@
+@import "../../css/boilerplate.css";
+@import "../../components/Avatar/avatar.css";
+
+.badge {
+  position: relative;
+  width: fit-content;
+}
+
+.badge-on-avatar {
+  position: absolute;
+  width: 28%;
+  height: 28%;
+  right: 3%;
+  bottom: 2%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.status-online {
+  background-color: var(--green);
+}
+
+.status-offline {
+  background-color: grey;
+}
+.status-idle {
+  background-color: var(--orange);
+}
+.status-dnd {
+  background-color: var(--red);
+}
+
+.badge-number {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  color: var(--white);
+  background-color: var(--red);
+  top: 0;
+  right: -15%;
+  text-align: center;
+}
+
+.material-icons-outlined {
+  font-size: 40px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.badge-on-icon-md .material-icons-outlined {
+  font-size: 30px;
+}
+
+.badge-on-icon-sm .material-icons-outlined {
+  font-size: 24px;
+}
+
+.badge-on-icon-sm .badge-number {
+  min-width: 1.25rem;
+  height: 1.25rem;
+  font-size: 0.75rem;
+  top: -0.5rem;
+  right: -0.7rem;
+}
+
+.badge-on-icon-md .badge-number {
+  min-width: 1.25rem;
+  height: 1.25rem;
+  font-size: 0.75rem;
+  top: -12%;
+  right: -20%;
+}

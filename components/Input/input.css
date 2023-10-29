@@ -1,0 +1,77 @@
+@import "../../css/boilerplate.css";
+
+.input-group {
+  width: 100%;
+  margin: 0 1.25rem 0.625rem;
+  color: var(--dark);
+  font-size: 0.875rem;
+}
+
+.input-label {
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 4px 0;
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  outline: none;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border: 1px solid var(--brand-color);
+}
+
+.input-group.input-show-error .input-label {
+  color: var(--red);
+}
+
+.input-group.input-show-error .input-field {
+  border: 1px solid var(--red);
+}
+
+.input-group.input-show-error .input-field:focus {
+  border: 1px solid var(--red);
+}
+
+.input-group.input-show-error .error-message {
+  color: var(--red);
+}
+
+.text-area {
+  width: 100%;
+  display: block;
+  padding: 0.5rem;
+  border: 1px solid var(--grey);
+  border-radius: 2px;
+  line-height: 1.5;
+  outline: none;
+}
+
+.radio-label,
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 0.875rem;
+}
+
+.radio-btn,
+.checkbox {
+  margin: 0 0.625rem;
+  cursor: pointer;
+}
+
+.radio-group.radio-disabled .radio-label,
+.checkbox-group.checkbox-disabled .checkbox-label {
+  color: var(--grey);
+}
+
+.checkbox-group.checkbox-disabled .checkbox {
+  cursor: not-allowed;
+}

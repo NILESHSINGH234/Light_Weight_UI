@@ -1,0 +1,82 @@
+@import "./boilerplate.css";
+
+/* only upto 768px screen */
+.sidebar {
+  position: fixed;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  background-color: var(--white);
+  box-shadow: 6px 0px 4px -4px var(--secondary);
+  width: 0px;
+  top: 0em;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.sidebar-close-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 25px;
+}
+
+.sidebar-category {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--black);
+  padding: 1rem 1rem 0.8rem 0rem;
+}
+
+.sidebar-subcategory {
+  cursor: pointer;
+}
+
+.sidebar-subcategory li {
+  padding-bottom: 5px;
+}
+
+.sidebar-subcategory li a {
+  padding: 0 12px;
+  color: var(--grey);
+  font-weight: 400;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.sidebar-subcategory li a:hover {
+  color: var(--primary-color);
+}
+
+.sidebar-subcategory .active {
+  color: var(--primary-color);
+  font-weight: 500;
+  border-left: 4px solid var(--primary-color);
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .sidebar {
+    margin-right: 1rem;
+    padding-top: 2rem;
+    background-color: #fff;
+    flex-basis: 240px;
+    width: auto;
+    position: sticky;
+    top: 0em;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: none;
+    z-index: 0;
+    transition: none;
+  }
+  .sidebar .sidebar-close-icon {
+    display: none;
+  }
+}

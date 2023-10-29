@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@import url("/css/boilerplate.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  min-height: 8vh;
+}
+
+.nav-left {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* .nav-left a {
+  color: #333;
+} */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  max-width: max-content;
+  cursor: pointer;
+}
+
+.brand .brand-title {
+  color: var(--brand-color);
+}
+
+.nav-right {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-right a {
+  color: var(--dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-right a:hover {
+  opacity: 0.7;
+}
+
+.nav-right a img:hover {
+  opacity: 0.7;
+}
+
+.nav-right .nav-link {
+  font-size: 1rem;
+  margin-right: 1.5rem;
+}
+
+.nav-right .nav-icon {
+  margin: 0rem;
+}
+
+.nav .nav-left .sidebar-menu-icon {
+  margin-right: 1rem;
+  color: var(--dark);
+}
+
+@media only screen and (min-width: 600px) {
+  .nav {
+    padding: 2rem 1rem 1rem;
+  }
+  .nav-right .nav-link {
+    margin-right: 2rem;
+  }
+  .nav-left {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav .nav-left .sidebar-menu-icon {
+    display: none;
+  }
+}

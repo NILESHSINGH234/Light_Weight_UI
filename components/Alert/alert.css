@@ -1,0 +1,64 @@
+@import "../../css/boilerplate.css";
+
+.alert {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  color: var(--black);
+  font-size: 1rem;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  font-weight: 400;
+}
+
+.alert-primary {
+  background-color: var(--light-blue);
+  color: var(--secondary-color);
+}
+.alert-success {
+  background-color: var(--light-green);
+  color: var(--green);
+}
+.alert-danger {
+  background-color: var(--light-red);
+  color: var(--red);
+}
+.alert-warning {
+  background-color: var(--light-orange);
+  color: var(--orange);
+}
+.alert-dark {
+  background-color: var(--dark);
+  color: var(--secondary);
+}
+
+.alert .material-icons-outlined {
+  margin-right: 1rem;
+}
+
+.alert .material-icons {
+  margin-right: 1rem;
+}
+
+.alert-close {
+  display: flex;
+  align-items: center;
+}
+
+.alert-close .alert-left {
+  display: inline-flex;
+  flex: 1;
+  align-items: center;
+}
+
+.alert-close .icon-close {
+  margin: 0;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .alert {
+    padding: 1rem 1.5rem;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../css/boilerplate.css";
+
+.slider .slider-input::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+.slider.slider-with-icon .slider-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider.slider-with-icon .slider-label .slider-icon {
+  margin-right: 0.5rem;
+}

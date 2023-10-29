@@ -1,0 +1,67 @@
+@import "../../css/boilerplate.css";
+@import "../Avatar/avatar.css";
+
+.list {
+  list-style-type: none;
+  width: 100%;
+  max-width: 430px;
+  background-color: var(--white);
+  margin: 10px;
+}
+
+.list-title {
+  font-size: 1.2rem;
+  padding: 1rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.list.list-spaced .list-item {
+  font-size: 0.875rem;
+  padding: 0.6rem 1rem;
+  font-weight: 400;
+}
+
+.list.list-stacked .list-item {
+  font-size: 0.875rem;
+  padding: 1rem;
+  border: 1px solid var(--light-grey);
+  font-weight: 400;
+}
+
+.list.list-stacked .list-item:hover {
+  background-color: var(--light-grey);
+  cursor: pointer;
+}
+
+.list.list-stacked-notification .list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--secondary);
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+.notification-body {
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+  color: var(--dark);
+}
+
+.notification-body .content {
+  padding-left: 0.8rem;
+}
+
+.notification-time {
+  color: var(--grey);
+}
+
+@media only screen and (min-width: 600px) {
+  .list.list-stacked-notification .list-item {
+    font-size: 0.875rem;
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,132 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+  margin: 0 auto;
+}
+
+.doc-page-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 0 1rem;
+}
+
+.doc-content {
+  flex: 1 1 0%;
+  max-width: 400px;
+  padding-top: 2rem;
+  margin: 0 auto;
+  min-height: 150vh;
+}
+
+.divider {
+  margin: 2rem 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--lynx-gray);
+}
+
+.content-title {
+  font-size: 2rem;
+}
+
+.content-description {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.content-category {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem 0rem;
+}
+
+.content-category-description {
+  margin-bottom: 1rem;
+}
+
+.content-highlight {
+  color: var(--primary-color);
+}
+
+.example-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  min-height: 100px;
+  border-radius: 4px;
+  background-color: var(--secondary);
+}
+
+.code-snippet {
+  margin: 2rem 0rem;
+}
+
+.alert-preview {
+  flex-direction: column;
+}
+
+.utility-preview {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.avatar-preview {
+  gap: 10px;
+}
+
+.back-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.back-btn-container .left a {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--grey);
+  transition: all 0.3s ease;
+}
+
+.back-btn-container .left a:hover {
+  color: var(--primary-color);
+}
+
+.back-btn-container .right a {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--grey);
+  transition: all 0.3s ease;
+}
+
+.back-btn-container .right a:hover {
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .doc-content {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 80%;
+  }
+  .doc-content {
+    max-width: 800px;
+  }
+}
