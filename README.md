@@ -51,5 +51,5 @@ Be sure to have your pages set up with the latest design and development standar
 - Toast
 - Utilities
 
-> The documentation can be found at [https://light-weight-ajbj2fn7i-nileshsingh234.vercel.app/) 
+> The documentation can be found at [https://light-weight-ajbj2fn7i-nileshsingh234.vercel.app/]
 
